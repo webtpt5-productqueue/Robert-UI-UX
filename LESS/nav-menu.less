@@ -1,13 +1,35 @@
 .header-container {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 100px;
+  .fixed();
+  height: 60px;
   background-color: red;
-  
-  .logo{
+  text-align: center;
+  .flex(@a: space-between;);
+  #imgDiv{
+    .flex(@a:center);
     width: 20%;
+    height: 100%;
+    .logo{
+      width: auto;
+      max-height: 89%;
+    }
+  }
+  nav{
+    list-style: none;
+    .flex(@a: space-around;);
+    width: 40%;
+    height: 100%;
+    li{
+      list-style: none;
+      font-size: 2rem;
+      font-weight: bold;
+      a{
+        text-decoration: none;
+        &:link, &:visited, &:hover, &:active{
+          color: white;
+
+        }
+      }
+      
+    }
   }
 }
