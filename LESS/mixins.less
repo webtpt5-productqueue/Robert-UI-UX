@@ -1,0 +1,33 @@
+.flex(@a: center; @b: center; @c: center; @d: wrap; @e: row; @f:flex; @g:100%; @m: 0 auto;){
+
+  flex-direction: @a;
+  flex-wrap: @b;
+  justify-content: @c;
+  align-items: @d;
+  align-content: @e;
+  display: @f;
+  width: @g;
+  margin: @m;
+}
+
+.mobile(@rules: {}; @width: 100%;) {
+ 
+  @media only screen and (max-width: @mobile) {
+      @rules();
+      width: @width;
+      margin: 0 auto;
+      .flex(@e: column;)
+
+  }
+}
+
+.tablet(@rules: {}; @width: 100%;) {
+ 
+  @media only screen and (max-width: @tablet) {
+      @rules();
+      width: @width;
+      margin: 0 auto;
+      .flex(@e: column;)
+
+  }
+}

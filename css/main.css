@@ -1,8 +1,14 @@
-header {
-  background-color: #bb1333;
+.header-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100px;
+  background-color: red;
 }
-header #imgDiv .logo {
-  height: 40px;
+.header-container .logo {
+  width: 20%;
 }
 /*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
 /* Document
