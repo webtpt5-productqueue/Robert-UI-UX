@@ -156,7 +156,6 @@ div .cta-div {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
-  width: 100%;
 }
 .header-container #imgDiv {
   justify-content: center;
@@ -165,7 +164,6 @@ div .cta-div {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
-  width: 100%;
   width: 20%;
   height: 100%;
 }
@@ -181,13 +179,12 @@ div .cta-div {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
-  width: 100%;
   width: 40%;
   height: 100%;
 }
 .header-container nav li {
   list-style: none;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 .header-container nav li a {
@@ -207,6 +204,14 @@ div .cta-div {
   background-position: center;
   background-color: #002070;
 }
+.bg2 {
+  height: 39.5rem;
+  background-image: url('/images/accordion-left.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: #002070;
+}
 .cta-div {
   margin-top: 60px;
   justify-content: center;
@@ -215,9 +220,168 @@ div .cta-div {
   flex-wrap: wrap;
   flex-direction: column;
   display: flex;
-  width: 100%;
   font-size: 3rem;
   line-height: 12rem;
   color: #bb1333;
   font-weight: bold;
+}
+.cta-div h1,
+.cta-div h2 {
+  text-shadow: 0.1rem 0.1rem 0.5rem #002070;
+}
+.cta-div button {
+  border-radius: 10rem;
+  height: 4rem;
+  width: 19rem;
+  background: #bb1333;
+  color: #fff;
+  border: none;
+  animation-name: btn;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: btn;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: btn;
+  -moz-animation-duration: 6s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  font-weight: bolder;
+}
+.main-content,
+.col {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  background-color: #002070;
+}
+.row {
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+}
+.row .bg2 {
+  width: 40%;
+}
+.row .acc {
+  width: 60%;
+  max-height: auto;
+}
+.accordionItem h2 {
+  margin: 0;
+  font-size: 4.5rem;
+  padding: 0.4rem;
+  color: #fff;
+  background-color: #bb1333;
+  border-bottom: 1px solid #66d;
+}
+.accordionItem h2:hover {
+  cursor: pointer;
+}
+.accordionItem div {
+  margin: 0;
+  padding: 1rem 0.4rem;
+  background-color: #797c8b;
+  border-bottom: 1px solid #1e50ee;
+}
+.accordionItem.hide h2 {
+  color: #bb1333;
+  background-color: lightblue;
+}
+.accordionItem.hide div {
+  display: none;
+}
+.accordionItem p {
+  font-size: 3rem;
+}
+@keyframes btn {
+  0% {
+    opacity: 9.5;
+    color: #bb1333;
+    background-color: white;
+  }
+  25% {
+    opacity: 0.7;
+    color: white;
+    background-color: #bb1333;
+  }
+  50% {
+    opacity: 9.5;
+    color: #bb1333;
+    background-color: white;
+  }
+  75% {
+    opacity: 0.7;
+    color: white;
+    background-color: #bb1333;
+  }
+  100% {
+    opacity: 9.5;
+    color: #bb1333;
+    background-color: white;
+  }
+}
+@-webkit-keyframes btn {
+  0% {
+    opacity: 9.5;
+    color: #bb1333;
+    background-color: white;
+  }
+  25% {
+    opacity: 0.7;
+    color: white;
+    background-color: #bb1333;
+  }
+  50% {
+    opacity: 9.5;
+    color: #bb1333;
+    background-color: white;
+  }
+  75% {
+    opacity: 0.7;
+    color: white;
+    background-color: #bb1333;
+  }
+  100% {
+    opacity: 9.5;
+    color: #bb1333;
+    background-color: white;
+  }
+}
+@-moz-keyframes btn {
+  0% {
+    opacity: 9.5;
+    color: #bb1333;
+    background-color: white;
+  }
+  25% {
+    opacity: 0.7;
+    color: white;
+    background-color: #bb1333;
+  }
+  50% {
+    opacity: 9.5;
+    color: #bb1333;
+    background-color: white;
+  }
+  75% {
+    opacity: 0.7;
+    color: white;
+    background-color: #bb1333;
+  }
+  100% {
+    opacity: 9.5;
+    color: #bb1333;
+    background-color: white;
+  }
 }
