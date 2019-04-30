@@ -486,3 +486,27 @@ footer #copy {
   font-size: 3rem;
   color: white;
 }
+#github {
+  margin: 20px;
+}
+/* Dropdown Button */
+.pf {
+  background-color: #1d2326;
+  padding: 12px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+}
+.pf {
+  padding: 2px;
+  background-color: #1d2326;
+  border: none;
+  font-size: 3rem;
+  color: white;
+}
+#portfolio {
+  margin: 20px;
+}
