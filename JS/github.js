@@ -1,17 +1,14 @@
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function gitHub() {
-  document.querySelector("#github-socialMedia").classList.toggle("show");
-}
+const gitHub = document.querySelector("#github")
+const li = document.querySelectorAll(".footer-link")
 
 // Close the dropdown menu if the user clicks outside of it
 
 
-gitHub.addEventListener('click', function(e){
-  if(!e.target.matches('.dropbtn')){
-    let dropdowns = document.querySelector('.dropdown-gituhub')
-    if(dropdowns.classList.contains('show')){
-      dropdowns.classList.remove('show');
-    }
-  }
-})
+li[2].addEventListener('mouseenter', function(){
+  gitHub.classList.remove("hidden")
+  let hideMe = document.querySelector('.dropbtn')
+  let addPadding = document.querySelector('')
+  hideMe.style.innerHTML = "none";
+});
