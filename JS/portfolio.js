@@ -11,7 +11,7 @@ fLi[3].addEventListener('click', function(){
 
 portfolio.addEventListener('mouseout', function(){
   setTimeout(function(){
-  potfolio.classList.add("hidden")
+  portfolio.classList.add("hidden")
   let hideMe = document.querySelector('.pf')
   hideMe.innerHTML = "Portfolio Pages";
   }, 7000)
