@@ -1,0 +1,63 @@
+.flex(@a: center; @b: center; @c: center; @d: wrap; @e: row; @f:flex;){
+
+  justify-content: @a;
+  align-content: @b;
+  align-items: @c;
+  flex-wrap: @d;
+  flex-direction: @e;
+  display: @f;
+}
+
+.fixed{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.mobile(@rules: {}; @width: 95%;) {
+ 
+  @media only screen and (max-width: @mobile) {
+      @rules();
+      width: @width;
+      margin: 0 auto;
+      .flex(@e: column;)
+
+  }
+}
+
+.tablet(@rules: {}; @width: 95%;) {
+ 
+  @media only screen and (max-width: @tablet) {
+      @rules();
+      width: @width;
+      margin: 0 auto;
+      .flex(@e: column;)
+
+  }
+}
+
+.flashingBtn(@a: btn; @b: 2s; ){
+  background:#bb1333;
+	color:#fff;
+	border:none;
+
+	
+	animation-name: @a;
+	animation-duration: @b;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	//Firefox 1+
+	-webkit-animation-name: @a;
+	-webkit-animation-duration: @b;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	//Safari 3-4
+	-moz-animation-name: @a;
+	-moz-animation-duration: @b;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+}

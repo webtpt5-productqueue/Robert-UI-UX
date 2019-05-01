@@ -1,8 +1,35 @@
-header{
-  background-color: #bb1333;
+.header-container {
+  .fixed();
+  height: 60px;
+  background-color: red;
+  text-align: center;
+  .flex(@a: space-between;);
   #imgDiv{
+    .flex(@a:center);
+    width: 20%;
+    height: 100%;
     .logo{
-      height: 40px;
+      width: auto;
+      max-height: 89%;
+    }
+  }
+  nav{
+    list-style: none;
+    .flex(@a: space-around;);
+    width: 40%;
+    height: 100%;
+    li{
+      list-style: none;
+      font-size: 3rem;
+      font-weight: bold;
+      a{
+        text-decoration: none;
+        &:link, &:visited, &:hover, &:active{
+          color: white;
+
+        }
+      }
+      
     }
   }
 }
