@@ -489,9 +489,6 @@ footer #copy {
   font-size: 2.2rem;
   color: white;
 }
-#github {
-  margin: 20px;
-}
 /* Dropdown Button */
 .pf {
   padding: 2px;
@@ -509,9 +506,6 @@ footer #copy {
   flex-wrap: wrap;
   flex-direction: column;
   display: flex;
-}
-#portfolio {
-  margin: 20px;
 }
 .hidden {
   display: none;
@@ -565,4 +559,38 @@ footer #copy {
   width: 120px;
   height: auto;
   border-radius: 500px;
+}
+#proj-desc {
+  margin-top: 60px;
+}
+section.first-half {
+  padding: 10px 20px;
+  padding-right: 0px;
+  width: 25%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  display: flex;
+}
+section.first-half .individual {
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+}
+section.first-half .individual .name {
+  padding: 1rem;
+  font-size: 2rem;
+}
+img {
+  width: 140px;
+  border-radius: 900px;
 }
