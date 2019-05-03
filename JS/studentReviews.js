@@ -8,7 +8,7 @@ class StudentReviews{
     this.img = this.imgFaces.querySelector('img')
 	//This assigns the data value of the img faces current div to this.data
     this.data = this.imgFaces.dataset.img;
-	This line associates the HTML element that has the same number of data-rev as this.data's data-img value
+	//This line associates the HTML element that has the same number of data-rev as this.data's data-img value
     this.review = document.querySelector(`.fc-column[data-rev='${this.data}']`)
 
 	//This line creates an event listener that occurs whenever a designated image is clicked, the corresponding students text block is then displayed via the "select" method
