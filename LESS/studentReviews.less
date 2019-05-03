@@ -1,0 +1,35 @@
+.student-reviews{
+  .flex(@a: space-around; @d: nowrap;);
+  margin-bottom: 4rem;
+  #rev-text{
+    width: 60%;
+    .fc-column{
+      display: none;
+      &.active{
+        .flex(@e: column; @d: nowrap;);
+        padding:0 30px;
+        h3{
+          font-size: 2rem;
+          text-align: center;
+          padding: 15px 0px;
+        }
+        .rev-paragraph{
+          font-size: 3rem;
+        }
+        .name{
+          font-size: 2rem;
+          padding: 15px 0px;
+        }
+      }
+    }
+  }
+  .rev-img{
+    width:30%;
+    .flex(@a: space-around;);
+    .imgFaces img{
+      width: 120px;
+      height: auto;
+      border-radius: 500px;
+    }
+  }
+}
