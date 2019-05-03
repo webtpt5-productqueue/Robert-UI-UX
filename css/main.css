@@ -560,25 +560,26 @@ footer #copy {
   height: auto;
   border-radius: 500px;
 }
-#parent {
+section#proj-desc {
+  width: 100%;
+  margin-top: 60px;
+}
+section#proj-desc .width80 {
   justify-content: center;
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
+  width: 80%;
+  margin: 0 auto;
 }
-#proj-desc {
-  margin-top: 60px;
+#fullW {
+  width: 100%;
 }
-section.second-half {
-  width: 60%;
-}
-section.first-half {
-  padding: 10px 20px;
-  padding-right: 0px;
-  width: 25%;
-  margin-right: 0px;
+#fullW section#about-team {
+  width: 85%;
+  margin: 0 auto;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -586,11 +587,14 @@ section.first-half {
   flex-direction: column;
   display: flex;
 }
-section.first-half .individual {
+#fullW .row-about .individual {
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+#fullW .individual {
+  margin: 2rem 0rem;
   padding: 1rem 1rem;
-  margin: 1rem 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  text-align: center;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -598,11 +602,34 @@ section.first-half .individual {
   flex-direction: row;
   display: flex;
 }
-section.first-half .individual .name {
-  padding: 1rem;
+#fullW .individual h2 {
   font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
 }
-img {
-  width: 140px;
-  border-radius: 900px;
+#fullW .individual .social {
+  width: 15%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  padding-bottom: 10px;
+  margin-left: 1.2rem;
+}
+#fullW .individual .social .jon {
+  margin: 0rem;
+}
+#fullW .individual .social .soc-github {
+  margin: 5.5rem 0rem;
+}
+#fullW .individual img {
+  width: 130px;
+  height: auto;
+  border-radius: 50px;
+}
+.width65 {
+  width: 65%;
 }

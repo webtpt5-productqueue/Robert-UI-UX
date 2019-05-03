@@ -1,34 +1,58 @@
-#parent{
-  .flex();
-}
-
-#proj-desc{
+section#proj-desc{
+  width: 100%;
   margin-top: 60px;
-}
-section.second-half{
-  width: 60%;
+  .width80{
+    .flex(@e: column; );
+    width: 80%;
+    margin: 0 auto;
+    
+  }
 
 }
-section.first-half{
-  padding: 10px 20px;
-  padding-right: 0px;
-  width: 25%;
-  margin-right: 0px;
-  .flex(@e: column; @d: nowrap;);
-  .individual{
+#fullW{
+  width: 100%;
+  section#about-team{
+    width:85%;
+    margin: 0 auto;
+    .flex(@e: column; @d: nowrap;);
+  }
+  .row-about .individual{
+    width: 25%;
+    background-color: rgba(0,0,0, 0.1);
+    border-radius: 15px;
+  }
+  .individual {
+    margin: 2rem 0rem;
     padding: 1rem 1rem;
-    margin: 1rem 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    text-align: center;
-    .flex();
-    .name{
-      padding: 1rem;
+    .flex(@e: row;);
+    h2{
       font-size: 2rem;
+      line-height:2.5rem;
+      text-align: center;
+    }
+    .social{
+      width: 15%;
+      .flex(@e: column;);
+      height: 100%;
+      padding-bottom: 10px;
+      margin-left: 1.2rem;
+      .jon{
+        margin: 0rem;
+      }
+      .soc-github{
+        margin: 5.5rem 0rem;
+      }
     }
   }
+
+  .individual img{
+    width: 130px;
+    height: auto;
+    border-radius: 50px;
+  }
 }
-img {
-  width: 140px;
-  border-radius: 900px;
-  
+.width65{
+  width: 65%;
 }
+
+
