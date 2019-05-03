@@ -560,13 +560,25 @@ footer #copy {
   height: auto;
   border-radius: 500px;
 }
+#parent {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+}
 #proj-desc {
   margin-top: 60px;
+}
+section.second-half {
+  width: 60%;
 }
 section.first-half {
   padding: 10px 20px;
   padding-right: 0px;
   width: 25%;
+  margin-right: 0px;
   justify-content: center;
   align-content: center;
   align-items: center;
