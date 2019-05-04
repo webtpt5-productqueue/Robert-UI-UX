@@ -11,18 +11,23 @@
     .logo{
       width: auto;
       max-height: 89%;
+      .mobile(@rules: {margin-right:3rem;}; @width:100%;); 
     }
+    .mobile(@rules: {margin-right:3rem;}; @width: 34%;);
   }
   nav{
+    z-index: 12;
     list-style: none;
     .flex(@a: space-around;);
     width: 60%;
     height: 100%;
-    li{
+    .mobile(@rules: {}; @width: 50%; @b: row; );
+    li.navLi{
       list-style: none;
       font-size: 2.5rem;
       font-weight: bold;
       margin-right: 2.5rem;
+      .mobile(@rules: {font-size: 2rem; margin: 0rem;}; @width: 15%; @b: row;);
       a{
         text-decoration: none;
         &:link, &:visited, &:hover, &:active{
@@ -34,4 +39,6 @@
     }
   }
   padding-left: 5rem;
+
+  .mobile(@rules: {margin: 0; padding: 0;}; @width: 100%; @a: space-between; @b: row;)
 }

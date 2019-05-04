@@ -13,7 +13,9 @@
   .acc{
     width: 60%;
     max-height:auto;
+    .mobile(@rules: {}; @width: 85%;)
   }
+  .mobile(@rules: {div.bg2{display: none;}}; @width: 90%;);
 }
 
 .accordionItem h2 { 
@@ -23,6 +25,7 @@
   color: #fff; 
   background-color: #bb1333; 
   border-bottom: 1px solid #66d; 
+  .mobile(@rules: {font-size: 2.5rem;}; @width: 100%;)
 }
 .accordionItem h2:hover { 
   cursor: pointer; 
@@ -42,4 +45,5 @@
 }
 .accordionItem p{
   font-size: 1.9rem;
+  .mobile(@rules: {font-size: 1.8rem;}; @width: 100%;)
 }

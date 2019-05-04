@@ -16,13 +16,13 @@
   left: 0;
 }
 
-.mobile(@rules: {}; @width: 95%;) {
+.mobile(@rules: {}; @width: 95%; @b: column; @a: space-around;) {
  
   @media only screen and (max-width: 500px) {
       @rules();
       width: @width;
       margin: 0 auto;
-      .flex(@e: column;)
+      .flex(@e: @b; @a: @a;)
 
   }
 }
@@ -33,7 +33,7 @@
       @rules();
       width: @width;
       margin: 0 auto;
-      .flex(@e: row;)
+      .flex(@e: row; )
 
   }
 }

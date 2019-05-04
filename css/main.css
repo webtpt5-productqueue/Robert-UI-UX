@@ -179,7 +179,34 @@ div .cta-div {
   width: auto;
   max-height: 89%;
 }
+@media only screen and (max-width: 500px) {
+  .header-container #imgDiv .logo {
+    margin-right: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .header-container #imgDiv {
+    margin-right: 3rem;
+    width: 34%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+}
 .header-container nav {
+  z-index: 12;
   list-style: none;
   justify-content: space-around;
   align-content: center;
@@ -190,20 +217,60 @@ div .cta-div {
   width: 60%;
   height: 100%;
 }
-.header-container nav li {
+@media only screen and (max-width: 500px) {
+  .header-container nav {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+.header-container nav li.navLi {
   list-style: none;
   font-size: 2.5rem;
   font-weight: bold;
   margin-right: 2.5rem;
 }
-.header-container nav li a {
+@media only screen and (max-width: 500px) {
+  .header-container nav li.navLi {
+    font-size: 2rem;
+    margin: 0rem;
+    width: 15%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+.header-container nav li.navLi a {
   text-decoration: none;
 }
-.header-container nav li a:link,
-.header-container nav li a:visited,
-.header-container nav li a:hover,
-.header-container nav li a:active {
+.header-container nav li.navLi a:link,
+.header-container nav li.navLi a:visited,
+.header-container nav li.navLi a:hover,
+.header-container nav li.navLi a:active {
   color: white;
+}
+@media only screen and (max-width: 500px) {
+  .header-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
 }
 .bg1 {
   height: 500px;
@@ -233,6 +300,20 @@ div .cta-div {
   color: white;
   font-weight: bold;
   margin-top: 60px;
+}
+@media only screen and (max-width: 500px) {
+  .cta-div {
+    margin-top: 60px;
+    line-height: 4rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
 }
 .cta-div h1,
 .cta-div h2 {
@@ -302,6 +383,33 @@ div .cta-div {
   width: 60%;
   max-height: auto;
 }
+@media only screen and (max-width: 500px) {
+  .row .acc {
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .row {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+  .row div.bg2 {
+    display: none;
+  }
+}
 .accordionItem h2 {
   margin: 0;
   font-size: 2.8rem;
@@ -309,6 +417,19 @@ div .cta-div {
   color: #fff;
   background-color: #bb1333;
   border-bottom: 1px solid #66d;
+}
+@media only screen and (max-width: 500px) {
+  .accordionItem h2 {
+    font-size: 2.5rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
 }
 .accordionItem h2:hover {
   cursor: pointer;
@@ -328,6 +449,19 @@ div .cta-div {
 }
 .accordionItem p {
   font-size: 1.9rem;
+}
+@media only screen and (max-width: 500px) {
+  .accordionItem p {
+    font-size: 1.8rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
 }
 @keyframes btn {
   0% {
@@ -590,6 +724,70 @@ footer #copy {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .student-reviews .rev-img .imgFaces img {
+    padding: 0rem;
+    width: 80px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .student-reviews .rev-img div {
+    width: 30%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .student-reviews .rev-img {
+    order: 1;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .student-reviews {
+    margin-top: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .student-reviews #rev-text {
+    order: 2;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     display: flex;
   }
 }
