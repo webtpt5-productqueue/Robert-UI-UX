@@ -26,10 +26,12 @@
   .rev-img{
     width:30%;
     .flex(@a: space-around;);
+    .tablet(@rules: {div{padding:2rem;}}; @width: 50%;);
     .imgFaces img{
       width: 120px;
       height: auto;
-      border-radius: 500px;
+      border-radius: 100px;
+      .tablet(@rules: {};@width: 120px;);
     }
   }
 }
