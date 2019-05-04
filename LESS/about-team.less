@@ -24,6 +24,7 @@ section#proj-desc{
     font-weight: bolder;
     text-decoration-line: underline;
     padding: 1rem  0rem 3rem 0rem;
+    .mobile(@rules: {font-size: 5rem;}; );
     
   }
   
@@ -112,6 +113,7 @@ background-size: cover;
     color: white;
     padding-top: 2rem;
     .tablet(@rules: {padding: 2rem;};);
+    
   }
 }
 .para{
@@ -144,16 +146,27 @@ background-size: cover;
       .tablet(@rules: { margin: 0 auto; padding-bottom: 2rem;}; @width: 100%;);
       .row-about{
         .tablet(@rules: { margin: 0 auto;}; @width: 100%;);
+        .mobile(@rules: {padding-bottom: 1rem;}; @width: 100%; @b: space-between;);
       }
       .individual{
-
+        .mobile(@rules: {height: 10%; padding-bottom: 2rem;margin: 1rem;}; @width: 40%;);
+        div img{
+          .mobile(@rules: {}; @width: 90px;);
+        }
       }
     } 
   }
 }
-#fullW section#about-team .row-about .individual{
-  .tablet(@rules: { margin: 0 auto;}; @width: 30%;);
-}
+
 #fullW .para .about{
   .tablet(@rules: { line-height: 3rem;}; @width: 95%;);
+}
+
+
+#fullW section#about-team .individual .social, #fullW section#about-team .individual .social-two{
+  .mobile(@rules: {margin: 0; padding: 0; height: 50px;}; @width: 89%;@b: row;);
+}
+#fullW section#about-team #parent .column .individual{
+  .tablet(@rules: { margin: 0 auto;}; @width: 30%;);
+  .mobile(@rules: { }; @width:40%; @b: row;)
 }
