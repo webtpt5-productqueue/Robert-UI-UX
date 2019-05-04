@@ -656,6 +656,19 @@ section#proj-desc div > #pr0j-h1 {
   flex-direction: row;
   display: flex;
 }
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team .row-about {
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
 #fullW section#about-team .row-about .individual {
   width: 25%;
   background-color: rgba(255, 255, 255, 0.7);
@@ -715,6 +728,18 @@ section#proj-desc div > #pr0j-h1 {
   padding: 2rem 0rem;
   color: #bb1333;
 }
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team .individual {
+    width: 30%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
 #fullW section#about-team .individual img {
   width: 130px;
   height: auto;
@@ -726,6 +751,19 @@ section#proj-desc div > #pr0j-h1 {
   text-align: center;
   color: white;
   padding-top: 2rem;
+}
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team #about-h2 {
+    padding: 2rem;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
 }
 #fullW .para {
   width: 65%;
@@ -744,4 +782,78 @@ section#proj-desc div > #pr0j-h1 {
 }
 #fullW .width65 {
   width: 65%;
+}
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team #parent {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team #parent .column {
+    padding-bottom: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team #parent .column .row-about {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team .row-about .individual {
+    width: 30%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #fullW .para .about {
+    line-height: 3rem;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
 }

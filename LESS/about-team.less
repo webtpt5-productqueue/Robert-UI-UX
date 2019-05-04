@@ -51,6 +51,7 @@ background-size: cover;
 /* background by SVGBackgrounds.com */
   .row-about{
     .flex(@a: space-around;);
+    .tablet(@rules: {padding: 1rem;}; @width: 100%;)
   }
   .row-about .individual{
     width: 25%;
@@ -96,6 +97,7 @@ background-size: cover;
         color: #bb1333;
       }
     }
+    .tablet(@rules: {}; @width: 30%);
   }
 
   .individual img{
@@ -109,6 +111,7 @@ background-size: cover;
     text-align: center;
     color: white;
     padding-top: 2rem;
+    .tablet(@rules: {padding: 2rem;};);
   }
 }
 .para{
@@ -131,4 +134,26 @@ background-size: cover;
   .width65{
   width: 65%;
 }
+}
+
+#fullW section#about-team {
+  .tablet(@rules: {margin: 0 auto;}; @width: 100%;);
+  #parent{
+  .tablet(@rules: { margin: 0 auto;}; @width: 100%;);
+    .column{
+      .tablet(@rules: { margin: 0 auto; padding-bottom: 2rem;}; @width: 100%;);
+      .row-about{
+        .tablet(@rules: { margin: 0 auto;}; @width: 100%;);
+      }
+      .individual{
+
+      }
+    } 
+  }
+}
+#fullW section#about-team .row-about .individual{
+  .tablet(@rules: { margin: 0 auto;}; @width: 30%;);
+}
+#fullW .para .about{
+  .tablet(@rules: { line-height: 3rem;}; @width: 95%;);
 }
