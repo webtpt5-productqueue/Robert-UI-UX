@@ -2,11 +2,13 @@
   margin-top: 60px;
   .flex(@e: column;);
   font-size: 3rem;
-  line-height: 8rem;
-  color: #bb1333;
+  line-height: 6rem;
+  color: white;
   font-weight: bold;
+  margin-top: 60px;
+  .mobile(@rules: {margin-top: 60px; line-height: 4rem; font-size: 1.8rem;}; @width: 100%;);
   h1, h2 {
-    text-shadow: .1rem .1rem .5rem #002070;
+    text-shadow: .1rem .1rem 0rem red;
     text-align: center;
   }
   button{
@@ -20,6 +22,9 @@
   #flexme{
     width: 80%;
     .flex();
-
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 80px;
+    padding:3rem 2rem 3rem 2rem;
+    margin:2rem 1rem 0rem 1rem;
   }
 }

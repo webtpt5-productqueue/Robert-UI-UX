@@ -26,10 +26,26 @@
   .rev-img{
     width:30%;
     .flex(@a: space-around;);
+    .tablet(@rules: {div{padding:2rem;}}; @width: 50%;);
     .imgFaces img{
       width: 120px;
       height: auto;
-      border-radius: 500px;
+      border-radius: 100px;
+      .tablet(@rules: {};@width: 120px;);
+      .mobile(@rules: {padding: 0rem;}; @width: 80px;)
     }
   }
+}
+.student-reviews .rev-img div{
+  .mobile(@rules: {}; @width: 30%;)
+}
+
+.student-reviews .rev-img{
+  .mobile(@rules: {order: 1;}; @width: 60%;@b: row;)
+}
+.student-reviews{
+  .mobile(@rules: {margin-top: 1rem;}; @width: 100%;);
+}
+.student-reviews #rev-text{
+  .mobile(@rules: {order: 2;}; @width: 90%;);
 }

@@ -16,24 +16,24 @@
   left: 0;
 }
 
-.mobile(@rules: {}; @width: 95%;) {
+.mobile(@rules: {}; @width: 95%; @b: column; @a: space-around;) {
  
-  @media only screen and (max-width: @mobile) {
+  @media only screen and (max-width: 500px) {
       @rules();
       width: @width;
       margin: 0 auto;
-      .flex(@e: column;)
+      .flex(@e: @b; @a: @a;)
 
   }
 }
 
 .tablet(@rules: {}; @width: 95%;) {
  
-  @media only screen and (max-width: @tablet) {
+  @media only screen and (max-width: 1000px) {
       @rules();
       width: @width;
       margin: 0 auto;
-      .flex(@e: column;)
+      .flex(@e: row; )
 
   }
 }

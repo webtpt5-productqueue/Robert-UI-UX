@@ -163,6 +163,7 @@ div .cta-div {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
+  padding-left: 5rem;
 }
 .header-container #imgDiv {
   justify-content: center;
@@ -178,7 +179,34 @@ div .cta-div {
   width: auto;
   max-height: 89%;
 }
+@media only screen and (max-width: 500px) {
+  .header-container #imgDiv .logo {
+    margin-right: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .header-container #imgDiv {
+    margin-right: 3rem;
+    width: 34%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+}
 .header-container nav {
+  z-index: 12;
   list-style: none;
   justify-content: space-around;
   align-content: center;
@@ -186,22 +214,63 @@ div .cta-div {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
-  width: 40%;
+  width: 60%;
   height: 100%;
 }
-.header-container nav li {
-  list-style: none;
-  font-size: 3rem;
-  font-weight: bold;
+@media only screen and (max-width: 500px) {
+  .header-container nav {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
 }
-.header-container nav li a {
+.header-container nav li.navLi {
+  list-style: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-right: 2.5rem;
+}
+@media only screen and (max-width: 500px) {
+  .header-container nav li.navLi {
+    font-size: 2rem;
+    margin: 0rem;
+    width: 15%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+.header-container nav li.navLi a {
   text-decoration: none;
 }
-.header-container nav li a:link,
-.header-container nav li a:visited,
-.header-container nav li a:hover,
-.header-container nav li a:active {
+.header-container nav li.navLi a:link,
+.header-container nav li.navLi a:visited,
+.header-container nav li.navLi a:hover,
+.header-container nav li.navLi a:active {
   color: white;
+}
+@media only screen and (max-width: 500px) {
+  .header-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
 }
 .bg1 {
   height: 500px;
@@ -220,7 +289,6 @@ div .cta-div {
   background-color: #002070;
 }
 .cta-div {
-  margin-top: 60px;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -228,13 +296,29 @@ div .cta-div {
   flex-direction: column;
   display: flex;
   font-size: 3rem;
-  line-height: 8rem;
-  color: #bb1333;
+  line-height: 6rem;
+  color: white;
   font-weight: bold;
+  margin-top: 60px;
+}
+@media only screen and (max-width: 500px) {
+  .cta-div {
+    margin-top: 60px;
+    line-height: 4rem;
+    font-size: 1.8rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
 }
 .cta-div h1,
 .cta-div h2 {
-  text-shadow: 0.1rem 0.1rem 0.5rem #002070;
+  text-shadow: 0.1rem 0.1rem 0rem red;
   text-align: center;
 }
 .cta-div button {
@@ -267,6 +351,10 @@ div .cta-div {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 80px;
+  padding: 3rem 2rem 3rem 2rem;
+  margin: 2rem 1rem 0rem 1rem;
 }
 .main-content,
 .col {
@@ -296,6 +384,33 @@ div .cta-div {
   width: 60%;
   max-height: auto;
 }
+@media only screen and (max-width: 500px) {
+  .row .acc {
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .row {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+  .row div.bg2 {
+    display: none;
+  }
+}
 .accordionItem h2 {
   margin: 0;
   font-size: 2.8rem;
@@ -303,6 +418,19 @@ div .cta-div {
   color: #fff;
   background-color: #bb1333;
   border-bottom: 1px solid #66d;
+}
+@media only screen and (max-width: 500px) {
+  .accordionItem h2 {
+    font-size: 2.5rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
 }
 .accordionItem h2:hover {
   cursor: pointer;
@@ -322,6 +450,19 @@ div .cta-div {
 }
 .accordionItem p {
   font-size: 1.9rem;
+}
+@media only screen and (max-width: 500px) {
+  .accordionItem p {
+    font-size: 1.8rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
 }
 @keyframes btn {
   0% {
@@ -555,10 +696,101 @@ footer #copy {
   flex-direction: row;
   display: flex;
 }
+@media only screen and (max-width: 1000px) {
+  .student-reviews .rev-img {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+  .student-reviews .rev-img div {
+    padding: 2rem;
+  }
+}
 .student-reviews .rev-img .imgFaces img {
   width: 120px;
   height: auto;
-  border-radius: 500px;
+  border-radius: 100px;
+}
+@media only screen and (max-width: 1000px) {
+  .student-reviews .rev-img .imgFaces img {
+    width: 120px;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .student-reviews .rev-img .imgFaces img {
+    padding: 0rem;
+    width: 80px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .student-reviews .rev-img div {
+    width: 30%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .student-reviews .rev-img {
+    order: 1;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .student-reviews {
+    margin-top: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .student-reviews #rev-text {
+    order: 2;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
 }
 body {
   width: 100%;
@@ -585,13 +817,12 @@ section#proj-desc .width80 {
   display: flex;
   width: 80%;
   margin: 0 auto;
-  border: 1px solid yellow;
 }
 section#proj-desc div > #pr0j-h1 {
   font-size: 9rem;
   font-weight: bolder;
   text-decoration-line: underline;
-  padding-bottom: 1rem;
+  padding: 1rem  0rem 3rem 0rem;
 }
 #fullW {
   width: 100%;
@@ -610,7 +841,6 @@ section#proj-desc div > #pr0j-h1 {
   flex-wrap: nowrap;
   flex-direction: column;
   display: flex;
-  border: 1px solid maroon;
   background-color: #000000;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.5'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
@@ -618,7 +848,6 @@ section#proj-desc div > #pr0j-h1 {
   /* background by SVGBackgrounds.com */
 }
 #fullW section#about-team .row-about {
-  border: 1px solid orange;
   justify-content: space-around;
   align-content: center;
   align-items: center;
@@ -626,9 +855,22 @@ section#proj-desc div > #pr0j-h1 {
   flex-direction: row;
   display: flex;
 }
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team .row-about {
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
 #fullW section#about-team .row-about .individual {
   width: 25%;
-  background-color: rgba(156, 156, 156, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 15px;
 }
 #fullW section#about-team .individual {
@@ -640,13 +882,16 @@ section#proj-desc div > #pr0j-h1 {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
-  border: 1px solid red;
-  color: white;
+  color: rgba(187, 19, 51, 0.9);
+  font-weight: bolder;
 }
 #fullW section#about-team .individual h2 {
   font-size: 2rem;
   line-height: 2.5rem;
   text-align: center;
+}
+#fullW section#about-team .individual h2 .name {
+  width: 100%;
 }
 #fullW section#about-team .individual .social {
   width: 15%;
@@ -660,11 +905,39 @@ section#proj-desc div > #pr0j-h1 {
   padding-bottom: 10px;
   margin-left: 1.2rem;
 }
-#fullW section#about-team .individual .social .jon {
-  margin: 0rem;
+#fullW section#about-team .individual .social a {
+  color: #bb1333;
 }
 #fullW section#about-team .individual .social .soc-github {
   margin: 5.5rem 0rem;
+}
+#fullW section#about-team .individual .social-two {
+  width: 15%;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  padding-bottom: 10px;
+  margin-left: 1.2rem;
+}
+#fullW section#about-team .individual .social-two a {
+  padding: 2rem 0rem;
+  color: #bb1333;
+}
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team .individual {
+    width: 30%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
 }
 #fullW section#about-team .individual img {
   width: 130px;
@@ -676,23 +949,110 @@ section#proj-desc div > #pr0j-h1 {
   font-weight: bolder;
   text-align: center;
   color: white;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team #about-h2 {
+    padding: 2rem;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
 }
 #fullW .para {
   width: 65%;
-  border: 1px solid green;
-  background-color: rgba(156, 156, 156, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 15px;
 }
 #fullW .para .about {
   width: 80%;
   margin: 0 auto;
-  border: 1px solid yellow;
   font-size: 2.2rem;
   line-height: 3rem;
   padding: 0.8rem 0rem;
   text-align: center;
-  color: white;
+  color: rgba(187, 19, 51, 0.9);
+  font-weight: bolder;
 }
 #fullW .width65 {
   width: 65%;
+}
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team #parent {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team #parent .column {
+    padding-bottom: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team #parent .column .row-about {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #fullW section#about-team .row-about .individual {
+    width: 30%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #fullW .para .about {
+    line-height: 3rem;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+  }
 }
