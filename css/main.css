@@ -305,6 +305,7 @@ div .cta-div {
   .cta-div {
     margin-top: 60px;
     line-height: 4rem;
+    font-size: 1.8rem;
     width: 100%;
     margin: 0 auto;
     justify-content: space-around;
