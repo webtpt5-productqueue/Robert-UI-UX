@@ -163,6 +163,7 @@ div .cta-div {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
+  padding-left: 5rem;
 }
 .header-container #imgDiv {
   justify-content: center;
@@ -186,13 +187,14 @@ div .cta-div {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
-  width: 40%;
+  width: 60%;
   height: 100%;
 }
 .header-container nav li {
   list-style: none;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  margin-right: 2.5rem;
 }
 .header-container nav li a {
   text-decoration: none;
@@ -229,12 +231,12 @@ div .cta-div {
   display: flex;
   font-size: 3rem;
   line-height: 8rem;
-  color: #bb1333;
+  color: white;
   font-weight: bold;
 }
 .cta-div h1,
 .cta-div h2 {
-  text-shadow: 0.1rem 0.1rem 0.5rem #002070;
+  text-shadow: 0.1rem 0.1rem 0rem red;
   text-align: center;
 }
 .cta-div button {
@@ -267,6 +269,9 @@ div .cta-div {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 80px;
+  padding: 0rem 2rem 3rem 2rem;
 }
 .main-content,
 .col {
