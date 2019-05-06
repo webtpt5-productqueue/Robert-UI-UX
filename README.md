@@ -1,1 +1,3 @@
 # Robert-UI-UX
+
+Each component to each page has its own separate file that is aptly named. Every Less file is imported into the MAIN.less file, and I have several parametric mixin's that are created to make my code as DRY as possible. My media queries are structured as a parametric mixin as well. I have two media queries 500px and 800px. The accordion uses LEss for styling and also uses js for functionality. I have used two components in JS one for the footer links and also one for the home page student reviews section that allows you to click on an image and it then selects the appropriate student review. Their is a couple event listeners also in the component for the footer links. 
